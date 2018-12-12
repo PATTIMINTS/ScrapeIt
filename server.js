@@ -1,7 +1,7 @@
 var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-var exphbs  = require('express-handlebars');
+// var exphbs  = require('express-handlebars');
 
 // Our scraping tools
 // Axios is a promised-based http library, similar to jQuery's Ajax method
@@ -13,9 +13,9 @@ var cheerio = require("cheerio");
 var db = require("./models");
 
 var PORT = process.env.PORT || 3000;
-mongoose.Promise = Promise;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper";
-mongoose.connect(MONGODB_URI);
+// mongoose.Promise = Promise;
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper";
+// mongoose.connect(MONGODB_URI);
 
 
 // Initialize Express
@@ -32,18 +32,32 @@ app.use(express.json());
 app.use(express.static("public"));
 // handlebars register with express
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+// app.set('view engine', 'handlebars');
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/scrapeIt", { useNewUrlParser: true });
 
 // Routes
+// app.get("/", function(req, res) {
+//   db.Article
+//     .find({saved: false})
+//     .then(function(dbArticle) {
+//       var hbsObject = {
+//         articles: dbArticle
+//       };
+//       res.render("index", hbsObject);
+//     })
+//     .catch(function(err) {
+//       res.json(err);
+//     });
+// });
+
 
 // A GET route for scraping the echoJS website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with axios
-  axios.get("http://www.echojs.com/").then(function(response) {
+  axios.get("https://www.npr.org/sections/animals/").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
 
