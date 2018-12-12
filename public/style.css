@@ -62,3 +62,12 @@ textarea {
 	height: 200px;
 	font-size: 18px;
 }
+
+#saveArticle {
+	background-color: rgb(41, 41, 43);
+	color: #FCF5C7;
+	border-radius: 50%;
+	padding: 5px;
+	margin-bottom: 20px;
+
+}
