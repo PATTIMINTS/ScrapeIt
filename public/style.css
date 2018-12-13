@@ -32,6 +32,15 @@ body {
 .nav-link {
 	color: white;
 }
+#chico {
+	width: 650px;
+	margin-left: 400px;
+	margin-right: auto;
+	padding-top: 5%;
+	background-color: rgb(166, 181, 185, 0.8);
+	padding-left: 50px;
+	padding-right: 50px;
+}
 #topo {
 	width: 650px;
 	margin-left: 400px;
