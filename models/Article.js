@@ -27,10 +27,10 @@ var ArticleSchema = new Schema({
 //   required: true
 // },
 
-// saved: {
-//   type: Boolean,
+saved: {
+  type: Boolean,
 
-// },
+},
 
 
   // `note` is an object that stores a Note id
