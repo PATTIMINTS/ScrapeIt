@@ -1,44 +1,46 @@
 <div class="container-fluid nav"></div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <ul class="nav">
-    <li class="nav-item scrape">
-    <a class="nav-link active scrape" href="/">Home</a>
-    </li>
+        <li class="nav-item scrape">
+            <a class="nav-link active scrape" href="/">Home</a>
+        </li>
     </ul>
-    </nav>
-    
+</nav>
+
 
 
 <div class="container" id="chico">
-    <h1><span style = "color: red">N<span style ="color:black">P</span><span style= "color: blue">R</span><span style="color: rgb(245, 237, 237)"> Animals</span></h1>
+    <h1><span style="color: red">N<span style="color:black">P</span><span style="color: blue">R</span><span style="color: rgb(245, 237, 237)">
+                Animals</span></h1>
     <br>
-<div class="articles">
-    {{#each articles}}
-    {{#if saved}}
-    <div class="article">
-        {{!-- <img src="{{image}}" style="height:100px;"> --}}
-        <a href="{{link}}">
-            <h2>{{title}}</h2>
-        </a>
-        {{!-- <p>{{summary}}</p> --}}
-        <button class="btn btn-primary blue" data-id="{{_id}}">UNSAVE</button>
-        <button class="btn btn-primary greenNote" data-id="{{_id}}">NOTE</button>
-        <br>
+    <div class="articles">
+        {{#each articles}}
+        {{#if saved}}
+        <div class="article">
+            {{!-- <img src="{{image}}" style="height:100px;"> --}}
+            <a href="{{link}}">
+                <h2>{{title}}</h2>
+            </a>
+            {{!-- <p>{{summary}}</p> --}}
+            <button class="btn btn-primary blue" data-id="{{_id}}">UNSAVE</button>
+            <button class="btn btn-primary greenNote" data-id="{{_id}}">NOTE</button>
+            <br>
+        </div>
+        {{/if}}
+        {{/each}}
     </div>
-    {{/if}}
-    {{/each}}
-</div>
 
-{{!-- modal for displaying and creating notes --}}
-<div id="noteModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title text-center">Add a note</h4>
+
+    {{!-- modal for displaying and creating notes --}}
+    <div id="noteModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Add a note</h4>
+                </div>
+                <div id="notes" class="modal-body"></div>
             </div>
-            <div id="notes" class="modal-body"></div>
         </div>
     </div>
-</div>
 </div>
