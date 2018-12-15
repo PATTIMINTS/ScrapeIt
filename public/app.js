@@ -7,7 +7,6 @@ $.getJSON("/articles", function (data) {
     }
 });
 $(document).on("click", ".scrape", function () {
-    // $(".load").html("<img id='wait' src='./img/loading.gif'>");
     $.get("/scrape", function (req, res) {
         console.log(res);
     }).then(function (data) {
@@ -50,6 +49,7 @@ $(document).on("click", ".blue", function () {
         $(".article").filter("[data-id='" + articleId + "']").remove();
     });
 })
+
 // click event to open note modal and populate with notes
 $(document).on('click', '.greenNote', function (e) {
     $("#notes").empty();
