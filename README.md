@@ -3,7 +3,7 @@
 To view the deployed Heroku version click https://nprscrapeit.herokuapp.com/
 
 
-##This is an app that uses axios and Cheerio to scrape the NPR Animal section and pull the most recent articles
+## This is an app that uses axios and Cheerio to scrape the NPR Animal section and pull the most recent articles
 
 
 ### Technologies used
