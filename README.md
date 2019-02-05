@@ -24,3 +24,6 @@ To view the deployed Heroku version click https://nprscrapeit.herokuapp.com/
 
 <img width="1458" alt="screen shot 2019-02-05 at 2 41 38 pm" src="https://user-images.githubusercontent.com/41403073/52303242-13a43b80-2955-11e9-9840-3262a75269ff.png">
 
+## You can save and article and add a note.
+
+
