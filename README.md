@@ -26,7 +26,7 @@ To view the deployed Heroku version click https://nprscrapeit.herokuapp.com/
 
 ## You can save and article and add a note.
 
-<img width="639" alt="screen shot 2019-02-05 at 2 56 15 pm" src="https://user-images.githubusercontent.com/41403073/52303829-a42f4b80-2956-11e9-8899-8ba639e9e94a.png">
+<img width="694" alt="screen shot 2019-02-05 at 3 11 15 pm" src="https://user-images.githubusercontent.com/41403073/52304460-70edbc00-2958-11e9-864b-e5b473caccd4.png">
 
 ## You can easily unsave the article by clicking the unsave button.
 
